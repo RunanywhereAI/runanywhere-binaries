@@ -2,11 +2,11 @@
 // =============================================================================
 // Package.swift
 // RunAnywhereONNX - On-device ML inference framework
-// Version: 0.0.1-dev.e8dd719
+// Version: 0.0.1-dev.27a4832
 //
 // Usage (Swift Package Manager):
 //   dependencies: [
-//       .package(url: "https://github.com/RunanywhereAI/runanywhere-binaries.git", from: "0.0.1-dev.e8dd719")
+//       .package(url: "https://github.com/RunanywhereAI/runanywhere-binaries.git", from: "0.0.1-dev.27a4832")
 //   ]
 //   targets: [
 //       .target(name: "YourApp", dependencies: ["RunAnywhereONNX"])
@@ -32,8 +32,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "RunAnywhereONNX",
-            url: "https://github.com/RunanywhereAI/runanywhere-binaries/releases/download/v0.0.1-dev.e8dd719/RunAnywhereONNX.xcframework.zip",
-            checksum: "3a56138368beae10742b4de1ea840d9dbac504a54c5b388d7dbd5bc3f6fcafd8"
+            url: "https://github.com/RunanywhereAI/runanywhere-binaries/releases/download/v0.0.1-dev.27a4832/RunAnywhereONNX.xcframework.zip",
+            checksum: "0ee5b56451848d05670263df32b1eeec49b526f552363d200a47ce16aff35df7"
         ),
     ]
 )
