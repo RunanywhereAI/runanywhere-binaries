@@ -1,53 +1,39 @@
 // swift-tools-version:5.9
 // =============================================================================
 // Package.swift
-// RunAnywhere Binary Distribution
-// Version: 0.0.1-dev.9445680
+// RunAnywhereONNX - On-device ML inference framework
+// Version: 0.0.1-dev.e8dd719
 //
-// This package provides pre-built XCFrameworks for RunAnywhere backends.
-// Choose the backend(s) that best fit your use case:
-//
-//   - RunAnywhereONNX: ONNX Runtime backend (recommended for most use cases)
-//   - RunAnywhereCoreML: CoreML backend (Apple Neural Engine optimization)
-//   - RunAnywhereTFLite: TensorFlow Lite backend
-//   - RunAnywhereAll: All backends combined
+// Usage (Swift Package Manager):
+//   dependencies: [
+//       .package(url: "https://github.com/RunanywhereAI/runanywhere-binaries.git", from: "0.0.1-dev.e8dd719")
+//   ]
+//   targets: [
+//       .target(name: "YourApp", dependencies: ["RunAnywhereONNX"])
+//   ]
 //
 // Generated automatically - do not edit manually
 // =============================================================================
 
 import PackageDescription
 
-let version = "0.0.1-dev.9445680"
-let baseURL = "https://github.com/RunanywhereAI/runanywhere-binaries/releases/download/v0.0.1-dev.9445680"
-
 let package = Package(
-    name: "RunAnywhere",
+    name: "RunAnywhereONNX",
     platforms: [
         .iOS(.v15),
         .macOS(.v12)
     ],
     products: [
-        // ONNX Runtime backend - recommended for most use cases
         .library(
             name: "RunAnywhereONNX",
-            targets: ["RunAnywhereONNXWrapper", "RunAnywhereONNXBinary"]
+            targets: ["RunAnywhereONNX"]
         ),
     ],
     targets: [
-        // =====================================================================
-        // ONNX Runtime Backend
-        // =====================================================================
         .binaryTarget(
-            name: "RunAnywhereONNXBinary",
-            url: "\(baseURL)/RunAnywhereONNX.xcframework.zip",
-            checksum: "a82b6cb7267ae60848144bb0cf496b250c33d39d4a9713a76563f1fd9aef45d2"
+            name: "RunAnywhereONNX",
+            url: "https://github.com/RunanywhereAI/runanywhere-binaries/releases/download/v0.0.1-dev.e8dd719/RunAnywhereONNX.xcframework.zip",
+            checksum: "3a56138368beae10742b4de1ea840d9dbac504a54c5b388d7dbd5bc3f6fcafd8"
         ),
-        .target(
-            name: "RunAnywhereONNXWrapper",
-            dependencies: ["RunAnywhereONNXBinary"],
-            path: "Sources/ONNX",
-            sources: ["RunAnywhereONNX.swift"]
-        ),
-
     ]
 )
