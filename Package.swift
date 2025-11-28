@@ -2,14 +2,23 @@
 // =============================================================================
 // Package.swift
 // RunAnywhere Binary Distribution
+// Version: 0.0.1-dev.cacec5c
 //
-// This is a TEMPLATE - actual checksums are populated during release.
+// This package provides pre-built XCFrameworks for RunAnywhere backends.
+// Choose the backend(s) that best fit your use case:
+//
+//   - RunAnywhereONNX: ONNX Runtime backend (recommended for most use cases)
+//   - RunAnywhereCoreML: CoreML backend (Apple Neural Engine optimization)
+//   - RunAnywhereTFLite: TensorFlow Lite backend
+//   - RunAnywhereAll: All backends combined
+//
+// Generated automatically - do not edit manually
 // =============================================================================
 
 import PackageDescription
 
-let version = "0.0.0"
-let baseURL = "https://github.com/RunAnywhereAI/runanywhere-binaries/releases/download/v\(version)"
+let version = "0.0.1-dev.cacec5c"
+let baseURL = "https://github.com/RunanywhereAI/runanywhere-binaries/releases/download/v0.0.1-dev.cacec5c"
 
 let package = Package(
     name: "RunAnywhere",
@@ -23,21 +32,6 @@ let package = Package(
             name: "RunAnywhereONNX",
             targets: ["RunAnywhereONNXWrapper", "RunAnywhereONNXBinary"]
         ),
-        // CoreML backend - optimized for Apple Neural Engine
-        .library(
-            name: "RunAnywhereCoreML",
-            targets: ["RunAnywhereCoreMLWrapper", "RunAnywhereCoreMLBinary"]
-        ),
-        // TensorFlow Lite backend
-        .library(
-            name: "RunAnywhereTFLite",
-            targets: ["RunAnywhereTFLiteWrapper", "RunAnywhereTFLiteBinary"]
-        ),
-        // All backends combined
-        .library(
-            name: "RunAnywhereAll",
-            targets: ["RunAnywhereAll"]
-        ),
     ],
     targets: [
         // =====================================================================
@@ -46,7 +40,7 @@ let package = Package(
         .binaryTarget(
             name: "RunAnywhereONNXBinary",
             url: "\(baseURL)/RunAnywhereONNX.xcframework.zip",
-            checksum: "PLACEHOLDER_ONNX_CHECKSUM"
+            checksum: "155a1864671a1c119ac3925247b8256727693a4c6a5888d8b2f41b17175267dc"
         ),
         .target(
             name: "RunAnywhereONNXWrapper",
@@ -55,48 +49,5 @@ let package = Package(
             sources: ["RunAnywhereONNX.swift"]
         ),
 
-        // =====================================================================
-        // CoreML Backend (Apple Neural Engine)
-        // =====================================================================
-        .binaryTarget(
-            name: "RunAnywhereCoreMLBinary",
-            url: "\(baseURL)/RunAnywhereCoreML.xcframework.zip",
-            checksum: "PLACEHOLDER_COREML_CHECKSUM"
-        ),
-        .target(
-            name: "RunAnywhereCoreMLWrapper",
-            dependencies: ["RunAnywhereCoreMLBinary"],
-            path: "Sources/CoreML",
-            sources: ["RunAnywhereCoreML.swift"]
-        ),
-
-        // =====================================================================
-        // TensorFlow Lite Backend
-        // =====================================================================
-        .binaryTarget(
-            name: "RunAnywhereTFLiteBinary",
-            url: "\(baseURL)/RunAnywhereTFLite.xcframework.zip",
-            checksum: "PLACEHOLDER_TFLITE_CHECKSUM"
-        ),
-        .target(
-            name: "RunAnywhereTFLiteWrapper",
-            dependencies: ["RunAnywhereTFLiteBinary"],
-            path: "Sources/TFLite",
-            sources: ["RunAnywhereTFLite.swift"]
-        ),
-
-        // =====================================================================
-        // Umbrella target (all backends)
-        // =====================================================================
-        .target(
-            name: "RunAnywhereAll",
-            dependencies: [
-                "RunAnywhereONNXWrapper",
-                "RunAnywhereCoreMLWrapper",
-                "RunAnywhereTFLiteWrapper",
-            ],
-            path: "Sources/All",
-            sources: ["RunAnywhereAll.swift"]
-        ),
     ]
 )
