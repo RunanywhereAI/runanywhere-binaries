@@ -2,7 +2,7 @@
 // =============================================================================
 // Package.swift
 // RunAnywhere Binary Distribution
-// Version: 0.0.1-dev.cacec5c
+// Version: 0.0.1-dev.9445680
 //
 // This package provides pre-built XCFrameworks for RunAnywhere backends.
 // Choose the backend(s) that best fit your use case:
@@ -17,8 +17,8 @@
 
 import PackageDescription
 
-let version = "0.0.1-dev.cacec5c"
-let baseURL = "https://github.com/RunanywhereAI/runanywhere-binaries/releases/download/v0.0.1-dev.cacec5c"
+let version = "0.0.1-dev.9445680"
+let baseURL = "https://github.com/RunanywhereAI/runanywhere-binaries/releases/download/v0.0.1-dev.9445680"
 
 let package = Package(
     name: "RunAnywhere",
@@ -40,7 +40,7 @@ let package = Package(
         .binaryTarget(
             name: "RunAnywhereONNXBinary",
             url: "\(baseURL)/RunAnywhereONNX.xcframework.zip",
-            checksum: "155a1864671a1c119ac3925247b8256727693a4c6a5888d8b2f41b17175267dc"
+            checksum: "a82b6cb7267ae60848144bb0cf496b250c33d39d4a9713a76563f1fd9aef45d2"
         ),
         .target(
             name: "RunAnywhereONNXWrapper",

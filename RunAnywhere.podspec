@@ -1,7 +1,7 @@
 # =============================================================================
 # RunAnywhere.podspec
 # CocoaPods specification for RunAnywhere ML framework
-# Version: 0.0.1-dev.cacec5c
+# Version: 0.0.1-dev.9445680
 #
 # Usage:
 #   pod 'RunAnywhere'           # Default (ONNX) backend
@@ -15,7 +15,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'RunAnywhere'
-  s.version      = '0.0.1-dev.cacec5c'
+  s.version      = '0.0.1-dev.9445680'
   s.summary      = 'On-device ML inference framework with multiple backend support'
   s.description  = <<-DESC
     RunAnywhere provides a unified API for on-device machine learning inference
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { 'RunAnywhere' => 'hello@runanywhere.ai' }
   s.source       = {
-    :http => 'https://github.com/RunanywhereAI/runanywhere-binaries/releases/download/v0.0.1-dev.cacec5c/RunAnywhere-0.0.1-dev.cacec5c.zip',
+    :http => 'https://github.com/RunanywhereAI/runanywhere-binaries/releases/download/v0.0.1-dev.9445680/RunAnywhere-0.0.1-dev.9445680.zip',
     :sha256 => 'COMBINED_CHECKSUM_PLACEHOLDER'
   }
 
@@ -43,8 +43,8 @@ Pod::Spec.new do |s|
   # ---------------------------------------------------------------------------
   s.subspec 'ONNX' do |onnx|
     onnx.source = {
-      :http => 'https://github.com/RunanywhereAI/runanywhere-binaries/releases/download/v0.0.1-dev.cacec5c/RunAnywhereONNX.xcframework.zip',
-      :sha256 => '155a1864671a1c119ac3925247b8256727693a4c6a5888d8b2f41b17175267dc'
+      :http => 'https://github.com/RunanywhereAI/runanywhere-binaries/releases/download/v0.0.1-dev.9445680/RunAnywhereONNX.xcframework.zip',
+      :sha256 => 'a82b6cb7267ae60848144bb0cf496b250c33d39d4a9713a76563f1fd9aef45d2'
     }
     onnx.vendored_frameworks = 'RunAnywhereONNX.xcframework'
     onnx.frameworks = 'Foundation', 'CoreML', 'Accelerate'
