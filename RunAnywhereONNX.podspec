@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   s.author       = { 'RunAnywhere' => 'hello@runanywhere.ai' }
   s.source       = {
     :http => 'https://github.com/RunanywhereAI/runanywhere-binaries/releases/download/v0.0.1-dev.e2ac4eb/RunAnywhereONNX.xcframework.zip',
-    :sha256 => '030f7c9dcf40e58ab8d770caf94c4ee7671d2c391d007c8872c5e46034d73dd5'
+    :sha256 => '8f6d70707da24ae8a29722d190735e6f3b06b91b438989541761911295de3973'
   }
 
   s.ios.deployment_target = '15.0'
