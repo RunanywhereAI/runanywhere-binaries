@@ -1,17 +1,17 @@
 # =============================================================================
 # RunAnywhereONNX.podspec
 # On-device ML inference framework with ONNX Runtime backend
-# Version: 0.0.1-dev.27a4832
+# Version: 0.0.1-dev.6af923c
 #
 # Usage:
-#   pod 'RunAnywhereONNX', '~> 0.0.1-dev.27a4832'
+#   pod 'RunAnywhereONNX', '~> 0.0.1-dev.6af923c'
 #
 # Generated automatically - do not edit manually
 # =============================================================================
 
 Pod::Spec.new do |s|
   s.name         = 'RunAnywhereONNX'
-  s.version      = '0.0.1-dev.27a4832'
+  s.version      = '0.0.1-dev.6af923c'
   s.summary      = 'On-device ML inference framework for iOS/macOS'
   s.description  = <<-DESC
     RunAnywhereONNX provides on-device machine learning inference for iOS and macOS.
@@ -29,8 +29,8 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { 'RunAnywhere' => 'hello@runanywhere.ai' }
   s.source       = {
-    :http => 'https://github.com/RunanywhereAI/runanywhere-binaries/releases/download/v0.0.1-dev.27a4832/RunAnywhereONNX.xcframework.zip',
-    :sha256 => '0ee5b56451848d05670263df32b1eeec49b526f552363d200a47ce16aff35df7'
+    :http => 'https://github.com/RunanywhereAI/runanywhere-binaries/releases/download/v0.0.1-dev.6af923c/RunAnywhereONNX.xcframework.zip',
+    :sha256 => '41689bd26b462639f57e225b2f55f4ca71885d073345f1ab8e14f708cb258c59'
   }
 
   s.ios.deployment_target = '15.0'
