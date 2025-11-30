@@ -1,0 +1,2 @@
+c49ab53bbf4688d383d53c55ce16ae3f125dcca7c50c68703b0a85c1eb790e0d  RunAnywhereLlamaCPP-android.zip
+30ecfa4da8bf53be5ebff9f8653436fa474d338edde83bd24206b808ea16fa4b  RunAnywhereONNX-android.zip
