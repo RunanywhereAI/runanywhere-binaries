@@ -2,7 +2,7 @@
 // =============================================================================
 // Package.swift
 // RunAnywhereCore - On-device ML inference framework
-// Version: 0.0.1-dev.a3413f8
+// Version: 0.0.1-dev.e0bac69
 //
 // This package provides a unified XCFramework containing all backends:
 //   - ONNX Runtime (Text Gen, Embeddings, STT, TTS, VAD, Diarization)
@@ -10,7 +10,7 @@
 //
 // Usage (Swift Package Manager):
 //   dependencies: [
-//       .package(url: "https://github.com/RunanywhereAI/runanywhere-binaries.git", from: "0.0.1-dev.a3413f8")
+//       .package(url: "https://github.com/RunanywhereAI/runanywhere-binaries.git", from: "0.0.1-dev.e0bac69")
 //   ]
 //   targets: [
 //       .target(name: "YourApp", dependencies: ["RunAnywhereCore"])
@@ -36,8 +36,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "RunAnywhereCore",
-            url: "https://github.com/RunanywhereAI/runanywhere-binaries/releases/download/v0.0.1-dev.a3413f8/RunAnywhereCore.xcframework.zip",
-            checksum: "557d303d264d8909823f95a671638daa5fa27f7d58c048fbb28fe5e625690e25"
+            url: "https://github.com/RunanywhereAI/runanywhere-binaries/releases/download/v0.0.1-dev.e0bac69/RunAnywhereCore.xcframework.zip",
+            checksum: "5cba5d8ff72fcaad8b267380b122cd300e66c4fcf11d76f616b64cfa46d99976"
         ),
     ]
 )
