@@ -2,11 +2,11 @@
 // =============================================================================
 // Package.swift
 // RunAnywhere - On-device ML inference framework
-// Version: 0.0.1-dev.30d2aca
+// Version: 0.0.1-dev.de41c46
 //
 // Usage (Swift Package Manager):
 //   dependencies: [
-//       .package(url: "https://github.com/RunanywhereAI/runanywhere-binaries.git", from: "0.0.1-dev.30d2aca")
+//       .package(url: "https://github.com/RunanywhereAI/runanywhere-binaries.git", from: "0.0.1-dev.de41c46")
 //   ]
 //   targets: [
 //       .target(name: "YourApp", dependencies: ["RunAnywhere"])
