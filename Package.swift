@@ -37,7 +37,7 @@ let package = Package(
         .binaryTarget(
             name: "RunAnywhereCore",
             url: "https://github.com/RunanywhereAI/runanywhere-binaries/releases/download/v0.0.1-dev.e6b7a2f/RunAnywhereCore.xcframework.zip",
-            checksum: "f2bc0a3624098d56ee1a1b80cc5a173ef4c3ec17a3754c2871cf429a7711cc3a"
+            checksum: "0786d494553226820a3a19ba5ee573d4bedf4096b9ebfae9010b621952bb617b"
         ),
     ]
 )
