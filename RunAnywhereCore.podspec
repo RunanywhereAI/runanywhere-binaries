@@ -1,17 +1,17 @@
 # =============================================================================
 # RunAnywhereCore.podspec
 # On-device ML inference framework with all backends
-# Version: 0.0.1-dev.5cf5e71
+# Version: 0.0.1-dev.ee5013d
 #
 # Usage:
-#   pod 'RunAnywhereCore', '~> 0.0.1-dev.5cf5e71'
+#   pod 'RunAnywhereCore', '~> 0.0.1-dev.ee5013d'
 #
 # Generated automatically - do not edit manually
 # =============================================================================
 
 Pod::Spec.new do |s|
   s.name         = 'RunAnywhereCore'
-  s.version      = '0.0.1-dev.5cf5e71'
+  s.version      = '0.0.1-dev.ee5013d'
   s.summary      = 'On-device ML inference framework for iOS/macOS'
   s.description  = <<-DESC
     RunAnywhereCore provides on-device machine learning inference for iOS and macOS.
@@ -30,8 +30,8 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { 'RunAnywhere' => 'hello@runanywhere.ai' }
   s.source       = {
-    :http => 'https://github.com/RunanywhereAI/runanywhere-binaries/releases/download/v0.0.1-dev.5cf5e71/RunAnywhereCore.xcframework.zip',
-    :sha256 => '5a5e0b86c18838b66bc3cd49e89b022a7516c62581a398e573714ddcefc5f53f'
+    :http => 'https://github.com/RunanywhereAI/runanywhere-binaries/releases/download/v0.0.1-dev.ee5013d/RunAnywhereCore.xcframework.zip',
+    :sha256 => '8edb3fb579b05c08bb72986172b69d3eb15f9e50f5ed93653edfa6a2f48740cc'
   }
 
   s.ios.deployment_target = '15.0'
