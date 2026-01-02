@@ -1,0 +1,6 @@
+3a46c617d88879b4f293db029e52df95dd6d22f1e9bc041c6705c698c94b5e04  RunAnywhereLlamaCPP-android-v0.1.0.zip
+6e0a3a8715d011617c6a58a9609b5f4603c3304d994918694c64b33dfcf1f401  RunAnywhereONNX-android-v0.1.0.zip
+b27274fb1ddff85fb2d1e89f24223312f70287aa4ea8fb6fb5f31d56b802213a  onnxruntime-ios-v0.1.0.zip
+ad2df2b18b56773987d28192cca1378c7383ba1f04ac710f4ee6ba3b1d56595f  onnxruntime-macos-v0.1.0.zip
+54b58038d65536bfe1f20a567e0d05c508dba65bfc564a47eeb0aeb3115306b6  runanywhere-core-source-v0.1.0.tar.gz
+4f2da4fda47ef880c36ec624157ce32a03be7ab67f78fc20b9cf086017003ce0  sherpa-onnx-ios-v0.1.0.zip
