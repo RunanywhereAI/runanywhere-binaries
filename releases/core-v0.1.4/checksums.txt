@@ -1,0 +1,4 @@
+a0472ad2dc36178a9c5260505b0eeb8ba7b4ee245f1572c111ae672e58b44a9c  RABackendLlamaCPP-android-v0.1.4.zip
+d53bc8b34c23c87385c1b38ae556a487317ae88ffda47fe6860ac893548dad00  RABackendLlamaCPP-ios-v0.1.4.zip
+e3f6396b7a9b83066330a6f92c2bc5c042f35f2b4a79e7a43e792b1430e850e2  RABackendONNX-android-v0.1.4.zip
+467ce647745f8bb913d4daf70c0c7f86f77ba6e444eaf697cba09c40d75220a0  RABackendONNX-ios-v0.1.4.zip
